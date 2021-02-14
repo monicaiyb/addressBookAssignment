@@ -4,7 +4,7 @@ block content
         div.signup-image
             //- img(src="./images/nufarmLogo.jpg" alt="")
         h4.card-title Create your phonebook
-    form(method="POST" action='/addphone')
+    form(method="POST" action='/')
         div.required
             p *required
         
@@ -16,18 +16,18 @@ block content
         div.form-row
             div.col.form-group
                 //- label First Name
-                input.form-control(name="fname" id="fname" type="text" placeholder="First name*")
+                input.form-control(name="firstName" id="fname" type="text" placeholder="First name*")
 
         div.form-row
             div.col.form-group
                 //- label First Name
-                input.form-control(name="lname" id="lname" type="text" placeholder="Last name*")
+                input.form-control(name="lastName" id="lname" type="text" placeholder="Last name*")
 
 
         div.form-row
             div.col.form-group
                 //- label Last Name
-                input.form-control(name="phone" id="phone" type="tel" placeholder="phone number")
+                input.form-control(name="phoneNumber" id="phone" type="tel" placeholder="phone number")
 
         .submit-form
         button.btn.btn-primary(type="submit").
